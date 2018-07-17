@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>PracticeEngineer.com - Spelling Tester</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script src="jquery.js"></script>
+<script src="buzz.min.js"></script>
+<script src="ui.jquery.js"></script>
+<script src="sentencebuilder.js"></script>
+<script src="touchpunch.js"></script>
+
+<script type="text/javascript">
+
+
+
+function send(){
+
+	var field = document.getElementById("userText"),
+		value = "Placeholder text";
+	
+	if(field.value !== null && field.value !== ""){
+		value = field.value;
+	}
+	
+	set('cmi.suspend_data', value);
+
+}
+
+
+function set(param, value){
+
+	var callSucceeded = scorm.set(param, value);
+}
+
+
+function get(param){
+
+	var value = scorm.get(param);
+
+	show("Received: '" +value +"'");
+
+}
+
+
+function complete(){
+
+	show("Setting course status to 'completed'.");
+
+	var callSucceeded = scorm.set("cmi.completion_status", "completed");
+
+	show("Call succeeded? " +callSucceeded);
+
+}
+
+
+function end(){
+	RawTotal = numcorrect / games.length;
+		console.log(RawTotal);
+		var callSucceeded1 = scorm.set("cmi.score.raw", RawTotal);
+		console.log("Rawtotal send " + callSucceeded1)
+		//var callSucceeded2 = scorm.set("cmi.completion_status", "incomplete");
+		//console.log(callSucceeded2); 
+		var callSucceededData = scorm.set("cmi.suspend_data", idx); 
+		console.log(idx); 
+		console.log("did it send idx data? = " + callSucceededData);
+		var callSucceededSave = scorm.save(); 
+		console.log(callSucceededSave); 
+	var callSucceededSave = scorm.save(); 
+	var callSucceededQuit = scorm.quit();
+	window.top.close();
+
+}
+
+window.onunload = function (){
+	RawTotal = numcorrect / games.length;
+		console.log(RawTotal);
+		var callSucceeded1 = scorm.set("cmi.score.raw", RawTotal);
+		console.log("Rawtotal send " + callSucceeded1)
+		var callSucceededData = scorm.set("cmi.suspend_data", idx); 
+		var callSucceededSave = scorm.save();  
+		var callSucceededQuit = scorm.quit();
+}
+
+</script>
+
+</head>
+
+<body>
+	<div id="header">
+	<a href="#" class="button" id="resets">Reset</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="button" id="saves">Save</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="button" id="closes">Save and Close</a>&nbsp;&nbsp;&nbsp;&nbsp;<div id="score">Score = 0</div>
+    </div>
+    
+    <div id="container">
+
+        
+
+    </div>
+    
+    <div id="footer">
+		
+    	<p><a href="http://learningengineer.com" title="LearningEngineer.com">&#169; Copyright 2014 Michael F Langdon</a>
+		<a href="http://LearningEngineer.com/" title="LearningEngineer.com">Michael Langdon</a></p>
+    	
+		
+    </div>
+    
+    <div id="warning">
+    	Your browser doesn't support<br>the HTML5 audio element.<br><a href="http://www.google.com/chrome/">Please upgrade!</a>
+    </div>
+
+	
+</body>
+</html>

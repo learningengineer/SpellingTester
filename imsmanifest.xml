@@ -1,0 +1,143 @@
+<?xml version="1.0" standalone="no" ?>
+<manifest identifier="pipwerksSCORMWrapper_SCORM2004" version="2004" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+	xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:lom="http://ltsc.ieee.org/xsd/LOM" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                        http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd 
+                        http://ltsc.ieee.org/xsd/LOM lom.xsd">
+	<metadata>
+		<schema>ADL SCORM</schema>
+		<schemaversion>CAM 1.3</schemaversion>
+		<lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+			<general>
+				<identifier>
+					<catalog>practiceengineer</catalog>
+					<entry>http://practiceengineer.com</entry>
+				</identifier>
+				<title>
+					<string language="en-US">Spelling Tester by PracticeEngineer A thru C</string>
+				</title>
+				<language>en</language>
+				<description>
+					<string language="en-US">This assesses your ability to spell.</string>
+				</description>
+				<keyword>
+					<string language="en-US">practiceengineer.com</string>
+				</keyword>
+			</general>
+			<lifeCycle>
+				<version>
+					<string language="en-US">2004</string>
+				</version>
+				<status>
+					<source>LOMv1.0</source>
+					<value>final</value>
+				</status>
+			</lifeCycle>
+			<metaMetadata>
+				<metadataSchema>LOMv1.0</metadataSchema>
+				<metadataSchema>SCORM_CAM_v1.3</metadataSchema>
+			</metaMetadata>
+			<technical>
+				<format>text/html</format>
+			</technical>
+			<rights>
+				<cost>
+					<source>LOMv1.0</source>
+					<value>no</value>
+				</cost>
+				<copyrightAndOtherRestrictions>
+					<source>LOMv1.0</source>
+					<value>yes</value>
+				</copyrightAndOtherRestrictions>
+			</rights>
+			<classification>
+				<purpose>
+					<source>LOMv1.0</source>
+					<value>educational objective</value>
+				</purpose>
+				<description>
+					<string language="en-US">This assesses your ability to spell.</string>
+				</description>
+				<keyword>
+					<string language="en-US">practiceengineer.com</string>
+				</keyword>
+			</classification>
+		</lom>
+	</metadata>
+	<organizations default="practiceengineer">
+		<organization identifier="practiceengineer">
+			<title>Spelling Tester by PracticeEngineer  A thru C</title>
+			<item identifier="pip01" identifierref="pipRef01" isvisible="true">
+				<title>Spelling Tester by PracticeEngineer A thru C</title>
+			</item>
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="pipRef01" type="webcontent" adlcp:scormType="sco" href="index.html">
+			<file href="index.html" />
+			<file href="SCORM_API_wrapper.js" />
+			<file href="buzz.min.js" />
+			<file href="jquery.js" />
+			<file href="ui.jquery.js" />
+			<file href="jquery.lettering-0.6.1.min.js" />
+			<file href="sentencebuilder.js" />
+			<file href="styles.css" />
+			<file href="touchpunch.js" />
+			<file href="bg.png" />
+			<file href="customLogo.png" />
+			<file href="icw.png" />
+			<file href="play.jpg" />
+			<file href="play.png" />
+			<file href="practiceengineer.png" />
+			<file href="start.png" />
+			<file href="sounds/abandoned.ogg" />
+			<file href="sounds/acumen.ogg" />
+			<file href="sounds/aerodynamic.ogg" />
+			<file href="sounds/analogy.ogg" />
+			<file href="sounds/anonymous.ogg" />
+			<file href="sounds/assessment.ogg" />
+			<file href="sounds/bacteria.ogg" />
+			<file href="sounds/biochemical.ogg" />
+			<file href="sounds/browser.ogg" />
+			<file href="sounds/cadence.ogg" />
+			<file href="sounds/canonized.ogg" />
+			<file href="sounds/carbohydrates.ogg" />
+			<file href="sounds/carpediem.ogg" />
+			<file href="sounds/chromosomes.ogg" />
+			<file href="sounds/cognitive.ogg" />
+			<file href="sounds/commercial.ogg" />
+			<file href="sounds/consciousness.ogg" />
+			<file href="sounds/consequence.ogg" />
+			<file href="sounds/culpable.ogg" />
+			<file href="sounds/error.ogg" />
+			<file href="sounds/win.ogg" />
+			<file href="sounds/kid/a.ogg" />
+			<file href="sounds/kid/b.ogg" />
+			<file href="sounds/kid/c.ogg" />
+			<file href="sounds/kid/d.ogg" />
+			<file href="sounds/kid/e.ogg" />
+			<file href="sounds/kid/f.ogg" />
+			<file href="sounds/kid/g.ogg" />
+			<file href="sounds/kid/h.ogg" />
+			<file href="sounds/kid/j.ogg" />
+			<file href="sounds/kid/i.ogg" />
+			<file href="sounds/kid/k.ogg" />
+			<file href="sounds/kid/l.ogg" />
+			<file href="sounds/kid/m.ogg" />
+			<file href="sounds/kid/n.ogg" />
+			<file href="sounds/kid/o.ogg" />
+			<file href="sounds/kid/p.ogg" />
+			<file href="sounds/kid/q.ogg" />
+			<file href="sounds/kid/r.ogg" />
+			<file href="sounds/kid/s.ogg" />
+			<file href="sounds/kid/t.ogg" />
+			<file href="sounds/kid/u.ogg" />
+			<file href="sounds/kid/v.ogg" />
+			<file href="sounds/kid/w.ogg" />
+			<file href="sounds/kid/x.ogg" />
+			<file href="sounds/kid/y.ogg" />
+			<file href="sounds/kid/z.ogg" />
+			<file href="sounds/kid/.ogg" />
+		</resource>
+	</resources>
+</manifest>
